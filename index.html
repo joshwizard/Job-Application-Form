@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Job Application Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Job Application Form</h1>
+            <form action="">
+                <label for="name">Name:<input id="name" type="text" placeholder="Enter your name" required></label>
+                <label for="email">Email:<input id="email" type="email" placeholder="Enter your email" required></label>
+                <label for="position">Position:</label>
+                <select name="position" id="position" required>
+                    <option value="">Select a position</option>
+                    <option value="frontend">Front End Engineer</option>
+                    <option value="backend">Back End Engineer</option>
+                    <option value="mobile">Mobile Developer</option>
+                    <option value="blockchain">Block Chain</option>
+                    <option value="devops">DevOps Engineer</option>
+                    <option value="cyber-security">Cyber Security</option>
+                </select>
+                <fieldset class="radio-group">
+                    <legend>Availability</legend>
+                    <input id="full-time" name="availability" type="radio">
+                    <label for="full-time">Full-Time</label>
+                    <input id="part-time" name="availability" type="radio">
+                    <label for="part-time">Part-Time</label>
+                </fieldset>
+                <label for="position">Why do you consider yourself fit for the role:</label>
+                <textarea name="" id="message" placeholder="Explain briefly" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
